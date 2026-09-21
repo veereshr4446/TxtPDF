@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #222;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.form-section {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.question {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question textarea {
+    margin-top: 10px;
+    min-height: 80px;
+    resize: vertical;
+}
+
+.marks {
+    width: 100px;
+}
+
+button {
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.add-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.pdf-btn {
+    background: #2563eb;
+    color: white;
+    margin-left: 10px;
+}
+
+.delete-btn {
+    background: #dc2626;
+    color: white;
+    padding: 8px 12px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+hr {
+    margin: 35px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.preview {
+    background: white;
+    padding: 30px;
+}
+
+.preview h1 {
+    color: #111;
+    margin-bottom: 25px;
+}
+
+.student-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.preview-question {
+    margin: 25px 0;
+}
+
+.preview-question-number {
+    font-weight: bold;
+}
+
+.answer-line {
+    border-bottom: 1px solid #aaa;
+    height: 35px;
+    margin-top: 10px;
+}
+
+/* Print/PDF styling */
+@media print {
+
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .container {
+        box-shadow: none;
+        max-width: none;
+        padding: 0;
+    }
+
+    .form-section,
+    .add-btn,
+    .pdf-btn,
+    #questions,
+    h2,
+    .container > h1 {
+        display: none !important;
+    }
+
+    .preview {
+        display: block;
+        padding: 20px;
+    }
+
+    .preview h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .preview-question {
+        page-break-inside: avoid;
+    }
+
+    @page {
+        size: A4;
+        margin: 15mm;
+    }
+}

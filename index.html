@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test PDF Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Test PDF Creator</h1>
+
+    <div class="form-section">
+        <label>Test Title</label>
+        <input type="text" id="testTitle" placeholder="e.g. Mathematics Test">
+
+        <label>Student Name</label>
+        <input type="text" id="studentName" placeholder="Enter student name">
+
+        <label>Subject</label>
+        <input type="text" id="subject" placeholder="e.g. Mathematics">
+    </div>
+
+    <h2>Questions</h2>
+
+    <div id="questions"></div>
+
+    <button class="add-btn" onclick="addQuestion()">
+        + Add Question
+    </button>
+
+    <button class="pdf-btn" onclick="generatePDF()">
+        Generate PDF
+    </button>
+
+    <hr>
+
+    <div id="preview" class="preview">
+        <h1 id="previewTitle">Test Title</h1>
+
+        <div class="student-info">
+            <p><strong>Name:</strong> <span id="previewName">________________</span></p>
+            <p><strong>Subject:</strong> <span id="previewSubject">________________</span></p>
+            <p><strong>Date:</strong> __________________</p>
+        </div>
+
+        <hr>
+
+        <div id="previewQuestions"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
