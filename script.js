@@ -113,8 +113,10 @@ function updatePreview() {
             question.querySelector(".question-text").value ||
             "Question text";
 
-        const marks =
-            question.querySelector(".marks").value || "1";
+        const marks = Math.max(
+            1,
+            parseInt(question.querySelector(".marks").value, 10) || 1
+        );
 
         totalMarks += Number(marks) || 0;
 
