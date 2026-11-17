@@ -1,3 +1,5 @@
+"use strict";
+
 let questionCount = 0;
 
 // Add a new question
