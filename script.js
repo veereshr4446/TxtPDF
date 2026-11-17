@@ -101,6 +101,8 @@ function updatePreview() {
 
     preview.innerHTML = "";
 
+    let totalMarks = 0;
+
     questions.forEach((question, index) => {
 
         const text =
@@ -109,6 +111,8 @@ function updatePreview() {
 
         const marks =
             question.querySelector(".marks").value || "1";
+
+        totalMarks += Number(marks) || 0;
 
         const questionElement =
             document.createElement("div");
@@ -131,6 +135,8 @@ function updatePreview() {
 
         preview.appendChild(questionElement);
     });
+
+    document.getElementById("previewTotal").textContent = totalMarks;
 }
 
 
