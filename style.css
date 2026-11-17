@@ -194,3 +194,23 @@ button:focus-visible {
     outline: 3px solid #93c5fd;
     outline-offset: 2px;
 }
+
+/* Small screens */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 18px;
+    }
+
+    .student-info {
+        grid-template-columns: 1fr;
+    }
+
+    .pdf-btn {
+        margin-left: 0;
+    }
+}
