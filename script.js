@@ -168,6 +168,11 @@ function escapeHTML(text) {
 // Generate PDF
 function generatePDF() {
 
+    if (!document.querySelector(".question")) {
+        alert("Add at least one question first.");
+        return;
+    }
+
     updatePreview();
 
     window.print();
