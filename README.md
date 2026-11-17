@@ -9,3 +9,10 @@ A small, dependency-free web app that turns a list of questions into a printable
 - Answer lines under every question
 - One-click PDF via the browser's print dialog
 - Works offline, no build step
+
+## Usage
+
+1. Open `index.html` in any modern browser.
+2. Fill in the test title, student name and subject.
+3. Add your questions and set the marks for each.
+4. Click **Generate PDF** and choose *Save as PDF* in the print dialog.
