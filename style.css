@@ -102,6 +102,10 @@ button:hover {
     opacity: 0.9;
 }
 
+button:active {
+    transform: translateY(1px);
+}
+
 hr {
     margin: 35px 0;
     border: none;
