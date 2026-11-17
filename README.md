@@ -23,3 +23,7 @@ A small, dependency-free web app that turns a list of questions into a printable
 - [ ] Save and load tests as JSON
 - [ ] Optional answer key page
 - [ ] Dark mode for the editor
+
+## License
+
+Released under the [MIT License](LICENSE).
