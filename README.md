@@ -16,3 +16,10 @@ A small, dependency-free web app that turns a list of questions into a printable
 2. Fill in the test title, student name and subject.
 3. Add your questions and set the marks for each.
 4. Click **Generate PDF** and choose *Save as PDF* in the print dialog.
+
+## Roadmap
+
+- [ ] Multiple-choice question type
+- [ ] Save and load tests as JSON
+- [ ] Optional answer key page
+- [ ] Dark mode for the editor
