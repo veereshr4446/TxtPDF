@@ -88,6 +88,10 @@ function updatePreview() {
 
     document.getElementById("previewTitle").textContent = title;
 
+    // The browser uses the page title as the default PDF file name
+    document.title =
+        title === "Test Title" ? "Test PDF Creator" : title;
+
     document.getElementById("previewName").textContent = name;
 
     document.getElementById("previewSubject").textContent = subject;
