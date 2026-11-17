@@ -47,7 +47,15 @@ function addQuestion() {
 // Delete question
 function deleteQuestion(button) {
 
-    button.parentElement.parentElement.remove();
+    const question = button.closest(".question");
+
+    const text = question.querySelector(".question-text").value.trim();
+
+    if (text && !confirm("Delete this question?")) {
+        return;
+    }
+
+    question.remove();
 
     renumberQuestions();
 
