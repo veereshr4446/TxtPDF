@@ -1,0 +1,12 @@
+{
+  "title": "General Knowledge Test",
+  "student": "",
+  "subject": "General Knowledge",
+  "questions": [
+    { "text": "What is the capital of France?", "marks": 1 },
+    { "text": "Define photosynthesis.", "marks": 2 },
+    { "text": "Solve for x: 2x + 6 = 14.", "marks": 2 },
+    { "text": "Name three states of matter.", "marks": 3 },
+    { "text": "Explain why the sky appears blue.", "marks": 5 }
+  ]
+}
