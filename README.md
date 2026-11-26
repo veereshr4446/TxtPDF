@@ -13,6 +13,9 @@ A small, dependency-free web app that turns a list of questions into a printable
 - One-click PDF via the browser's print dialog
 - Draft autosaves in your browser, so a refresh never loses your work
 - Export and import tests as JSON files
+- Duplicate questions, clear all, and `Ctrl/Cmd + Enter` to add a question
+- Choose how many answer lines each question gets
+- Automatic dark mode for the editor
 - Works offline, no build step
 
 ## Usage
