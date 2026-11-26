@@ -31,3 +31,41 @@ document.addEventListener("input", saveDraft);
 new MutationObserver(saveDraft).observe(document.getElementById("questions"), {
     childList: true
 });
+
+// Fills the form from a state object (used for restoring and importing).
+function applyState(state) {
+    document.getElementById("testTitle").value = state.title || "";
+    document.getElementById("studentName").value = state.student || "";
+    document.getElementById("subject").value = state.subject || "";
+
+    const list = document.getElementById("questions");
+    list.innerHTML = "";
+    questionCount = 0;
+
+    const items =
+        Array.isArray(state.questions) && state.questions.length
+            ? state.questions
+            : [{ text: "", marks: 1 }];
+
+    items.forEach(function (item) {
+        addQuestion();
+
+        const q = list.lastElementChild;
+        q.querySelector(".question-text").value = item.text || "";
+        q.querySelector(".marks").value = item.marks || 1;
+    });
+
+    updatePreview();
+}
+
+function restoreDraft() {
+    try {
+        const raw = localStorage.getItem(DRAFT_KEY);
+
+        if (raw) applyState(JSON.parse(raw));
+    } catch (e) {
+        // Ignore a corrupted draft and start fresh.
+    }
+}
+
+restoreDraft();
