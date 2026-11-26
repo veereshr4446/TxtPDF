@@ -15,3 +15,15 @@
 - Total marks are calculated automatically.
 - Deleting a question that already has text asks for confirmation.
 - Use A4 paper and the default margins for the best result.
+
+## Keyboard shortcuts
+
+| Shortcut | Action |
+| --- | --- |
+| `Ctrl/Cmd + Enter` | Add a new question and focus it |
+
+## Saving your work
+
+- Your draft is saved automatically in this browser.
+- Use **Export JSON** to keep a copy or move a test to another computer.
+- Use **Import JSON** to load it again. See `examples/sample-test.json`.
