@@ -20,6 +20,18 @@ A small, dependency-free web app that turns a list of questions into a printable
 3. Add your questions and set the marks for each.
 4. Click **Generate PDF** and choose *Save as PDF* in the print dialog.
 
+## Project structure
+
+```
+TxtPDF/
+├── index.html      page structure
+├── style.css       screen + print styles
+├── script.js       core logic
+├── js/             optional feature scripts
+├── docs/           usage guide, FAQ, architecture
+└── examples/       sample questions and a sample test
+```
+
 ## Roadmap
 
 - [ ] Multiple-choice question type
