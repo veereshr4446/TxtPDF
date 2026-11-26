@@ -383,3 +383,10 @@ select {
         margin-bottom: 6px;
     }
 }
+
+@media (max-width: 600px) {
+    .tool-btn {
+        margin-left: 0;
+        margin-right: 8px;
+    }
+}
