@@ -345,3 +345,15 @@ select {
     border-color: #93c5fd;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
+
+/* Respect the reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+    button,
+    .question {
+        transition: none;
+    }
+
+    button:active {
+        transform: none;
+    }
+}
