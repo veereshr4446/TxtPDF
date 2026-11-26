@@ -371,3 +371,15 @@ select {
         width: 100%;
     }
 }
+
+/* Print: clearer answer lines */
+@media print {
+    .answer-line {
+        height: 32px;
+        border-bottom-color: #555;
+    }
+
+    .preview-question-number {
+        margin-bottom: 6px;
+    }
+}
