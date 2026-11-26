@@ -318,3 +318,20 @@ select {
         color: #9ca3af;
     }
 }
+
+/* Dark mode: keep the preview looking like white paper */
+@media screen and (prefers-color-scheme: dark) {
+    .preview {
+        background: #fff;
+        color: #222;
+        border-radius: 8px;
+    }
+
+    .preview h1 {
+        color: #111;
+    }
+
+    .preview hr {
+        border-top-color: #ddd;
+    }
+}
