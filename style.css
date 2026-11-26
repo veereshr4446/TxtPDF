@@ -259,3 +259,20 @@ select {
     font-size: 16px;
     background: white;
 }
+
+/* Friendly empty states */
+#previewQuestions:empty::before {
+    content: 'No questions yet.';
+    display: block;
+    margin: 25px 0;
+    color: #777;
+    font-style: italic;
+}
+
+#questions:empty::before {
+    content: 'Click "Add Question" to get started.';
+    display: block;
+    margin-bottom: 15px;
+    color: #777;
+    font-style: italic;
+}
