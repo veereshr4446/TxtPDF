@@ -242,3 +242,11 @@ button:focus-visible {
     font-size: 13px;
     color: #666;
 }
+
+.dup-btn {
+    margin-left: auto;
+    margin-right: 8px;
+    background: #6b7280;
+    color: white;
+    padding: 8px 12px;
+}
