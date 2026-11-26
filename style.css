@@ -221,3 +221,10 @@ button:focus-visible {
         display: none !important;
     }
 }
+
+/* Secondary toolbar buttons */
+.tool-btn {
+    background: #4b5563;
+    color: white;
+    margin-left: 10px;
+}
