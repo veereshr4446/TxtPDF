@@ -47,6 +47,10 @@ TxtPDF/
 
 More answers are in [docs/FAQ.md](docs/FAQ.md).
 
+## Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
+
 ## License
 
 Released under the [MIT License](LICENSE).
