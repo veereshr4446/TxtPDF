@@ -1,0 +1,12 @@
+{
+  "name": "Test PDF Creator",
+  "short_name": "TxtPDF",
+  "description": "Create a printable test paper from a list of questions and save it as a PDF.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f3f4f6",
+  "theme_color": "#2563eb",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
