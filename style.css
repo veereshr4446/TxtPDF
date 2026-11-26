@@ -234,3 +234,11 @@ button:focus-visible {
     color: #555;
     font-size: 14px;
 }
+
+.site-footer {
+    max-width: 900px;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+}
