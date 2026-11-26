@@ -335,3 +335,13 @@ select {
         border-top-color: #ddd;
     }
 }
+
+/* Question card hover feedback */
+.question {
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.question:hover {
+    border-color: #93c5fd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
