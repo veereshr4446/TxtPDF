@@ -16,3 +16,10 @@ jobs:
 
       - name: Check JavaScript syntax
         run: find . -name '*.js' -not -path './node_modules/*' -print0 | xargs -0 -n1 node --check
+
+      - name: Check HTML basics
+        run: |
+          grep -q '<!DOCTYPE html>' index.html
+          grep -q 'lang="en"' index.html
+          test -f style.css
+          test -f script.js
