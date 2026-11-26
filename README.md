@@ -1,5 +1,8 @@
 # TEXT TO PDF
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![Dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen)
+
 A small, dependency-free web app that turns a list of questions into a printable test paper (PDF).
 
 ## Features
