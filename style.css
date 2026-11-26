@@ -228,3 +228,9 @@ button:focus-visible {
     color: white;
     margin-left: 10px;
 }
+
+.counter {
+    margin: 0 0 10px;
+    color: #555;
+    font-size: 14px;
+}
