@@ -37,7 +37,7 @@ TxtPDF/
 - [ ] Multiple-choice question type
 - [ ] Save and load tests as JSON
 - [ ] Optional answer key page
-- [ ] Dark mode for the editor
+- [x] Dark mode for the editor
 
 ## Troubleshooting
 
