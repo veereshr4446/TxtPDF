@@ -39,6 +39,14 @@ TxtPDF/
 - [ ] Optional answer key page
 - [ ] Dark mode for the editor
 
+## Troubleshooting
+
+- **The PDF is empty:** add at least one question before clicking *Generate PDF*.
+- **Wrong paper size:** pick *A4* (or your size) in the print dialog and keep margins on *Default*.
+- **Colours missing:** enable *Background graphics* in the print dialog.
+
+More answers are in [docs/FAQ.md](docs/FAQ.md).
+
 ## License
 
 Released under the [MIT License](LICENSE).
