@@ -214,3 +214,10 @@ button:focus-visible {
         margin-left: 0;
     }
 }
+
+/* Utility: hide elements when printing */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
