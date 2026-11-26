@@ -11,6 +11,8 @@ A small, dependency-free web app that turns a list of questions into a printable
 - Live preview of the test paper
 - Answer lines under every question
 - One-click PDF via the browser's print dialog
+- Draft autosaves in your browser, so a refresh never loses your work
+- Export and import tests as JSON files
 - Works offline, no build step
 
 ## Usage
