@@ -35,7 +35,7 @@ TxtPDF/
 ## Roadmap
 
 - [ ] Multiple-choice question type
-- [ ] Save and load tests as JSON
+- [x] Save and load tests as JSON
 - [ ] Optional answer key page
 - [x] Dark mode for the editor
 
